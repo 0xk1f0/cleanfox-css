@@ -1,0 +1,117 @@
+:root {
+	--tab-min-height: 36px !important;
+    --tab-block-margin: 1px !important;
+	--focus-outline-width: 0 !important;
+	--newtab-search-icon: none !important;
+	--tab-block-margin: 0 !important;
+}
+
+menupopup {
+	background-color: #1c1b22 !important;
+	border-radius: 0 !important;
+	opacity: 100%;
+}
+
+menupopup menuitem, menupopup menu {
+	padding-block: 4px !important;
+	border-radius: 0px !important;
+}
+
+menupopup menuitem:hover, menupopup menu:hover {
+	background-color: #1c1b22 !important;
+}
+
+#BMB_bookmarksPopup .subviewbutton {
+    padding: 4px !important;
+}
+
+#PersonalToolbar {
+    max-height: 3em !important;
+}
+
+#navigator-toolbox {
+	border-bottom: none !important;
+}
+
+.tabbrowser-tab[selected] {
+	background-color: #2b2a33 !important;
+}
+
+#tabbrowser-tabs {
+	background-color: #2b2a33 !important;
+}
+
+toolbar {
+	background-color: #2b2a33 !important;
+}
+
+#urlbar {
+	min-height: 36px !important;
+	border: solid #1c1b22 !important;
+	border-radius: 0px !important;
+}
+
+#urlbar:hover {
+	border: solid #72717d !important;
+}
+
+#urlbar-input-container {
+	background-color: #42414d !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#urlbar-background {
+	background-color: #42414d !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#urlbar-background, #searchbar {
+    box-shadow: none !important;
+}
+
+#nav-bar {
+    box-shadow: none !important;
+    border-top: none !important;
+}
+
+#urlbar-input {
+	color: #e2e1ed !important;
+	margin-left: 6px !important;
+}
+
+#identity-box {
+	display: none !important;
+}
+
+#stop-reload-button image {
+	background-color: #1c1b22 !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#forward-button image {
+	background-color: #1c1b22 !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#back-button image {
+	background-color: #1c1b22 !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+@media (-moz-proton) {
+	#tabbrowser-tabs {
+	  --proton-tab-block-margin: 0;
+	  --tab-border-radius: 0;
+	}
+	.tab-background {
+	  box-shadow: none !important;
+	}
+	#tabbrowser-tabs .tab-background > .tab-context-line {
+	  margin: 0 !important;
+	}
+}

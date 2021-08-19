@@ -1,0 +1,52 @@
+@-moz-document url("about:newtab") {  
+	body {
+		background-color: #2b2a33 !important;
+	}
+	.wordmark {
+		display: none !important;
+	}
+	.icon {
+		display: none !important;
+	}
+	.search-handoff-button {
+		background-color: #42414d !important;
+		border: solid 3px #1c1b22 !important;
+		transition: 100ms;
+	}
+	.search-handoff-button:hover {
+		border: solid #72717d !important;
+		transition: 100ms;
+	}
+	.fake-textbox {
+		margin-top: 3px !important;
+		color: #72717d;
+	}
+
+}
+
+@-moz-document url("about:home") {  
+	body {
+		background-color: #2b2a33 !important;
+	}
+	.wordmark {
+		display: none !important;
+	}
+	.icon {
+		display: none !important;
+	}
+	.search-handoff-button {
+		background-color: #42414d !important;
+		border-radius: 0px !important;
+		border: solid 3px #1c1b22 !important;
+		transition: 100ms;
+		box-shadow: none !important;
+	}
+	.search-handoff-button:hover {
+		border: solid #72717d !important;
+		transition: 100ms;
+	}
+	.fake-textbox {
+		margin-top: 3px !important;
+		color: #e2e1ed !important;
+	}
+}
