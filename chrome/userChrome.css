@@ -21,8 +21,19 @@ menupopup menuitem:hover, menupopup menu:hover {
 	background-color: #1c1b22 !important;
 }
 
-#BMB_bookmarksPopup .subviewbutton {
-    padding: 4px !important;
+#BMB_bookmarksPopup {
+	background-color: #1c1b22 !important;
+	border-radius: 0 !important;
+	opacity: 100%;
+}
+
+#BMB_bookmarksPopup menuitem, #BMB_bookmarksPopup menu {
+    padding-block: 4px !important;
+	border-radius: 0px !important;
+}
+
+#BMB_bookmarksPopup menuitem:hover, #BMB_bookmarksPopup menu:hover {
+    background-color: #1c1b22 !important;
 }
 
 #PersonalToolbar {
@@ -33,12 +44,26 @@ menupopup menuitem:hover, menupopup menu:hover {
 	border-bottom: none !important;
 }
 
-.tabbrowser-tab[selected] {
+.tabbrowser-tab, .tab-content, .tab-background{
+	margin: 0 !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+	border: solid #72717d !important;
+	
+}
+
+.tabbrowser-tab[selected] .tab-content {
+	background-color: #72717d !important;
+}
+
+.tab-background {
 	background-color: #2b2a33 !important;
 }
 
 #tabbrowser-tabs {
-	background-color: #2b2a33 !important;
+	background-color: #1c1b22 !important;
+	margin: 0 !important;
 }
 
 toolbar {
@@ -101,6 +126,52 @@ toolbar {
 	background-color: #1c1b22 !important;
 	border: none !important;
 	border-radius: 0px !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+	background-color: #1c1b22 !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+.panel-subview-body {
+	border: none !important;
+	border-radius: 0px !important;
+	background: #42414d !important;
+}
+
+#appMenu-popup {
+	border: none !important;
+	border-radius: 0px !important;
+	background-color: #1c1b22 !important;
+}
+
+#appMenu-popup .subviewbutton {
+	padding-block: 4px !important;
+	border-radius: 0px !important;
+}
+
+#appMenu-popup .subviewbutton:hover {
+	background-color: #1c1b22 !important;
+}
+
+.subviewbutton.panel-subview-footer {
+	border: none !important;
+	border-radius: 0px !important;
+	background: #42414d !important;
+}
+
+.panel-header {
+	border: none !important;
+	border-radius: 0px !important;
+	background: #42414d !important;
+}
+
+.panel-subview-footer,
+[class^="PanelUI-"] {
+	border: none !important;
+	border-radius: 0px !important;
+	background: #42414d !important;
 }
 
 @media (-moz-proton) {
