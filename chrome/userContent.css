@@ -22,4 +22,13 @@
 	.fake-textbox {
 		color: #e2e1ed !important;
 	}
+	.logo-and-wordmark .logo { 
+		background: url("img/logo.png") no-repeat !important; 
+		background-size: cover !important; 
+		display: inline-block !important;
+	} 
+	.logo {
+		width: 120px !important;
+		height: 120px !important;
+	}
 }
