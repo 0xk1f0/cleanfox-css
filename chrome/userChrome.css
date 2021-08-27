@@ -7,14 +7,24 @@
 }
 
 menupopup {
-	background-color: #1c1b22 !important;
-	border-radius: 0 !important;
-	opacity: 100%;
+	border: none !important;
+	border-radius: 0% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#shadow-root {
+	border: none !important;
+	border-radius: 0% !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 menupopup menuitem, menupopup menu {
 	padding-block: 4px !important;
-	border-radius: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	border-radius: 0% !important;
 }
 
 menupopup menuitem:hover, menupopup menu:hover {
@@ -24,16 +34,26 @@ menupopup menuitem:hover, menupopup menu:hover {
 #BMB_bookmarksPopup {
 	background-color: #1c1b22 !important;
 	border-radius: 0 !important;
-	opacity: 100%;
+	opacity: 100% !important;
 }
 
 #BMB_bookmarksPopup menuitem, #BMB_bookmarksPopup menu {
     padding-block: 4px !important;
 	border-radius: 0px !important;
+	margin: 0px !important;
 }
 
 #BMB_bookmarksPopup menuitem:hover, #BMB_bookmarksPopup menu:hover {
     background-color: #1c1b22 !important;
+	margin: 0px !important;
+}
+
+.menupopup-arrowscrollbox {
+	border: none !important;
+	border-radius: 0 !important;
+	margin: 0px !important;
+	padding: 0 px !important;
+	background-color: rgba(66,65,77, 1.0)  !important;
 }
 
 #PersonalToolbar {
@@ -134,21 +154,38 @@ toolbar {
 	border-radius: 0px !important;
 }
 
+panel {
+	background-color: white !important;
+	-moz-window-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .panel-subview-body {
+	background-color: rgba(66,65,77, 1.0)  !important;
+	margin: 0 !important;
+	padding: 0 !important;
 	border: none !important;
 	border-radius: 0px !important;
-	background: #42414d !important;
+}
+
+.panel-arrowcontainer * {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	border-radius: 0px !important;
 }
 
 #appMenu-popup {
 	border: none !important;
 	border-radius: 0px !important;
-	background-color: #1c1b22 !important;
 }
 
 #appMenu-popup .subviewbutton {
 	padding-block: 4px !important;
 	border-radius: 0px !important;
+	margin: 0px !important;
+	padding: 0 px !important;
 }
 
 #appMenu-popup .subviewbutton:hover {
@@ -159,34 +196,37 @@ toolbar {
 	border: none !important;
 	border-radius: 0px !important;
 	background: #42414d !important;
+	margin: 0px !important;
+	padding: 0 px !important;
 }
 
 .panel-header {
 	border: none !important;
 	border-radius: 0px !important;
 	background: #42414d !important;
+	margin: 0px !important;
+	padding: 0 px !important;
 }
 
-.panel-subview-footer,
-[class^="PanelUI-"] {
+.panel-subview-footer {
 	border: none !important;
 	border-radius: 0px !important;
 	background: #42414d !important;
+	margin: 0px !important;
+	padding: 0 px !important;
 }
 
 #PlacesToolbarItems{ 
 	-moz-box-pack: center 
 }
 
-@media (-moz-proton) {
-	#tabbrowser-tabs {
-	  --proton-tab-block-margin: 0;
-	  --tab-border-radius: 0;
-	}
-	.tab-background {
-	  box-shadow: none !important;
-	}
-	#tabbrowser-tabs .tab-background > .tab-context-line {
-	  margin: 0 !important;
-	}
+#tabbrowser-tabs {
+	--proton-tab-block-margin: 0;
+	--tab-border-radius: 0;
+}
+.tab-background {
+	box-shadow: none !important;
+}
+#tabbrowser-tabs .tab-background > .tab-context-line {
+	margin: 0 !important;
 }
