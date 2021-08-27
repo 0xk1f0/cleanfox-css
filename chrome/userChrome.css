@@ -24,7 +24,12 @@ menupopup menuitem, menupopup menu {
 	padding-block: 4px !important;
 	margin: 0px !important;
 	border: none !important;
-	border-radius: 0% !important;
+	border-radius: 0 !important;
+}
+
+toolbarbutton {
+	border: none !important;
+	border-radius: 0 !important;
 }
 
 menupopup menuitem:hover, menupopup menu:hover {
