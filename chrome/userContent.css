@@ -1,4 +1,4 @@
-@-moz-document url("about:newtab"), url("about:home") {  
+@-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {  
 	body {
 		background-color: #2b2a33 !important;
 	}
@@ -30,5 +30,11 @@
 	.logo {
 		width: 120px !important;
 		height: 120px !important;
+	}
+}
+
+@-moz-document url("about:privatebrowsing") {  
+	body {
+		background-color: #100015 !important;
 	}
 }
