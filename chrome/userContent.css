@@ -1,4 +1,4 @@
-@-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {  
+@-moz-document url("about:newtab"), url("about:home") {  
 	body {
 		background-color: #2b2a33 !important;
 	}
@@ -36,5 +36,45 @@
 @-moz-document url("about:privatebrowsing") {  
 	body {
 		background-color: #100015 !important;
+		justify-content: unset !important;
+		padding-top: 134px !important;
+	}
+	.wordmark {
+		display: none !important;
+	}
+	.icon {
+		display: none !important;
+	}
+	.search-handoff-button {
+		background-color: #42414d !important;
+		border-radius: 0px !important;
+		border: solid 3px #1c1b22 !important;
+		transition: 100ms;
+		box-shadow: none !important;
+	}
+	.search-handoff-button:hover {
+		border: solid #72717d !important;
+		transition: 100ms;
+	}
+	.fake-textbox {
+		color: #e2e1ed !important;
+	}
+	.logo-and-wordmark .logo { 
+		background: url("img/logopv.png") no-repeat !important;
+		background-size: cover !important; 
+		display: inline-block !important;
+	}
+	.logo {
+		width: 120px !important;
+		height: 120px !important;
+	}
+	#info-body {
+		display: none !important;
+	}
+	#private-browsing-myths {
+		display: none !important;
+	}
+	#info-title {
+		margin: 0 !important;
 	}
 }
