@@ -235,3 +235,7 @@ panel {
 #tabbrowser-tabs .tab-background > .tab-context-line {
 	margin: 0 !important;
 }
+
+#contentAreaContextMenu {
+	margin: 5px !important;
+}
