@@ -1,0 +1,366 @@
+/* 
+	Big Thanks and Credits to leadweedy:
+	https://github.com/leadweedy/Firefox-Proton-Square
+	I took some of the squaring stuff from his Repo
+*/
+
+:root {
+	--tab-min-height: 36px !important;
+    --tab-block-margin: 1px !important;
+	--focus-outline-width: 0 !important;
+	--newtab-search-icon: none !important;
+	--tab-block-margin: 0 !important;
+	--bg-color:#030303;
+	--fg-color:#ffffff;
+	--hl-color:#404040;
+	--sc-color:#151515;
+    --button-hover-bgcolor:                     var(--hl-color)    !important;
+    --button-active-bgcolor:                    var(--hl-color)    !important;
+    --toolbarbutton-hover-background:           var(--hl-color)    !important;
+    --toolbarbutton-active-background:          var(--hl-color)    !important;
+    --lwt-toolbar-field-focus:                  var(--bg-color)    !important;
+    --lwt-text-color:                           var(--fg-color) !important;
+    --lwt-tab-text:                             var(--fg-color) !important;
+    --lwt-sidebar-background-color:             var(--bg-color)    !important;
+    --lwt-sidebar-text-color:                   var(--fg-color) !important;
+    --arrowpanel-border-color:                  var(--sc-color)    !important;
+    --arrowpanel-background:                    var(--bg-color)    !important;
+    --arrowpanel-color:                         var(--fg-color)    !important;
+    --autocomplete-popup-highlight-background:  var(--hl-color) !important;
+    --autocomplete-popup-highlight-color:       var(--hl-color) !important;
+    --autocomplete-popup-hover-background:      var(--hl-color) !important;
+	--arrowpanel-menuitem-padding: 6px 8px !important;
+	--arrowpanel-menuitem-margin: 0 4px !important;
+	--panel-subview-body-padding: 4px 0 !important;
+	--toolbarbutton-border-radius: 0 !important;
+	--arrowpanel-menuitem-border-radius: 0 !important;
+	--arrowpanel-border-radius: 0 !important;
+	--tab-border-radius: 0 !important;
+	--subviewbutton-border-radius: 0 !important;
+	--panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, var(--fg-color)), var(--custom-accent-color, var(--fg-color))) !important;
+}
+
+window,
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+    -moz-appearance: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+menupopup {
+	border: none !important;
+	border-radius: 0% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#shadow-root {
+	border: none !important;
+	border-radius: 0% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+menupopup menuitem, menupopup menu {
+	padding-block: 4px !important;
+	margin: 0px !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+toolbarbutton {
+	border-radius: 0 !important;
+}
+
+.toolbarbutton-badge-stack {
+	border-radius: 0 !important;
+}
+
+menupopup menuitem:hover, menupopup menu:hover {
+	background-color: var(--hl-color) !important;
+}
+
+.bookmark-item:hover {
+	background-color: var(--hl-color) !important;
+}
+
+#PlacesChevron:hover {
+	background-color: var(--hl-color) !important;
+}
+
+#BMB_bookmarksPopup {
+	background-color: var(--bg-color) !important;
+	border-radius: 0 !important;
+	opacity: 100% !important;
+}
+
+#BMB_bookmarksPopup menuitem, #BMB_bookmarksPopup menu {
+    padding-block: 4px !important;
+	border-radius: 0px !important;
+	margin: 0px !important;
+}
+
+#BMB_bookmarksPopup menuitem:hover, #BMB_bookmarksPopup menu:hover {
+    background-color: var(--hl-color) !important;
+	margin: 0px !important;
+}
+
+.menupopup-arrowscrollbox {
+	border: none !important;
+	border-radius: 0 !important;
+	margin: 0px !important;
+	padding: 0 px !important;
+	background-color: var(--bg-color) !important;
+}
+
+#PersonalToolbar {
+    max-height: 3em !important;
+}
+
+#navigator-toolbox {
+	border-bottom: none !important;
+}
+
+.tabbrowser-tab, .tab-content, .tab-background{
+	margin: 0 !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+	border: solid var(--hl-color) !important;
+	
+}
+
+.tabbrowser-tab[selected] .tab-content {
+	background-color: var(--hl-color) !important;
+}
+
+.tab-background {
+	background-color: var(--sc-color) !important;
+}
+
+#tabbrowser-tabs {
+	background-color: var(--bg-color) !important;
+	margin: 0 !important;
+}
+
+toolbar {
+	background-color: var(--sc-color) !important;
+}
+
+#urlbar {
+	min-height: 36px !important;
+	border: solid var(--bg-color) !important;
+	border-radius: 0px !important;
+}
+
+#urlbar:hover {
+	border: solid var(--hl-color) !important;
+}
+
+#urlbar-input-container {
+	background-color: var(--sc-color) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#urlbar-background {
+	background-color: var(--sc-color) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#urlbar-background, #searchbar {
+    box-shadow: none !important;
+}
+
+#nav-bar {
+    box-shadow: none !important;
+    border-top: none !important;
+}
+
+#urlbar-input {
+	color: #ffffff !important;
+	margin-left: 6px !important;
+}
+
+#identity-box {
+	display: none !important;
+}
+
+#stop-reload-button image {
+	background-color: var(--bg-color) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#forward-button image {
+	background-color: var(--bg-color) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#back-button image {
+	background-color: var(--bg-color) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+.subviewbutton.panel-subview-footer {
+	border: none !important;
+	border-radius: 0px !important;
+	background: var(--bg-color) !important;
+	margin: 0px !important;
+	padding: 0 px !important;
+}
+
+.panel-header {
+	border: none !important;
+	border-radius: 0px !important;
+	background: var(--bg-color) !important;
+	margin: 0px !important;
+	padding: 0 px !important;
+}
+
+.panel-subview-footer {
+	border: none !important;
+	border-radius: 0px !important;
+	background: var(--bg-color) !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+#PlacesToolbarItems{ 
+	-moz-box-pack: center;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+#tabbrowser-tabs {
+	--proton-tab-block-margin: 0;
+	--tab-border-radius: 0;
+}
+.tab-background {	
+	box-shadow: none !important;
+}
+
+.tabbrowser-tab[label="New Tab"] .tab-content .tab-icon-image {
+    display: none !important;
+}
+
+.tabbrowser-tab[label="Private Browsing"] .tab-content .tab-icon-image {
+    display: none !important;
+}
+
+#tabbrowser-tabs .tab-background > .tab-context-line {
+	margin: 0 !important;
+}
+
+#contentAreaContextMenu {
+	margin: 5px !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+	background-color: var(--bg-color) !important;
+	border-radius: 0px !important;
+}
+
+panel {
+	background-color: var(--bg-color) !important;
+	background: var(--bg-color) !important;
+	-moz-window-shadow: none !important;
+	border-radius: 0px !important;
+}
+
+#appMenu-popup {
+	background: var(--bg-color) !important;
+	border-radius: 0px !important;
+}
+
+#appMenu-multiView {
+	background: var(--bg-color)  !important;
+	border-radius: 0px !important;
+}
+
+.panel-viewcontainer {
+	background: var(--bg-color) !important;
+	border-radius: 0px !important;
+}
+
+.panel-subview-body {
+	background: var(--bg-color)  !important;
+	border-radius: 0px !important;
+}
+
+.panel-arrowcontainer * {
+	border-radius: 0px !important;
+}
+
+#appMenu-popup {
+	border-radius: 0px !important;
+}
+
+#appMenu-popup .subviewbutton {
+	border-radius: 0px !important;
+}
+
+#appMenu-popup .subviewbutton:hover {
+	background-color: var(--hl-color) !important;
+	border-radius: 0px !important;
+}
+
+@supports -moz-bool-pref("browser.appmenugradient.overwrite") {
+  :root{
+    --panel-separator-zap-gradient: linear-gradient(var(--custom-accent-color, #0a84ff), var(--custom-accent-color, #0a84ff)) !important;
+  }
+}
+
+@supports not -moz-bool-pref("browser.syncavatar.round") {
+  #fxa-avatar-image {border-radius: 0 !important;}
+}
+#fxa-avatar-image {transform: scale(var(--sync-avatar-scale)) !important;}
+
+.menupopup-arrowscrollbox, .panel-arrowcontainer, .panel-arrowbox, .panel-arrowscrollbox, menupopup {
+  border-radius: 0 !important;
+}
+
+menupopup menuitem, menupopup menu {border-radius: 0 !important;}
+
+#editBMPanel_namePicker {border-radius: 0 !important;}
+#editBMPanel_folderMenuList {border-radius: 0 !important;}
+#editBMPanel_tagsField {border-radius: 0 !important;}
+#editBMPanel_locationField {border-radius: 0 !important;}
+#editBMPanel_keywordField {border-radius: 0 !important;}
+
+.download-state, .downloadButton {border-radius: 0 !important;}
+.downloadProgress {
+  border-radius: 0 !important;
+  overflow: hidden !important;
+}
+.downloadProgress[paused] {
+  border-radius: 0 !important;
+}
+.downloadProgress:not([value="0"])::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.downloadProgress::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.downloadProgress[paused]::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.protections-popup-tp-switch, .protections-popup-tp-switch::before {border-radius: 0 !important;}
+
+#permission-popup-menulist {border-radius: 0 !important;}
+#webRTC-selectMicrophone-menulist {border-radius: 0 !important;}
+#webRTC-selectWindow-menulist {border-radius: 0 !important;}
+#webRTC-previewVideo {border-radius: 0 !important;}
+#appMenu-zoomReset-button2 > .toolbarbutton-text,
+#appMenu-fullscreen-button2 > .toolbarbutton-icon {
+  border-radius: 0 !important;
+}

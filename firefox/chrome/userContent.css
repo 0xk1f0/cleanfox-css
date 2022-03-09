@@ -43,6 +43,9 @@
 		width: 120px !important;
 		height: 120px !important;
 	}
+  .wordmark {
+    display: none !important;
+  }
 }
 
 @-moz-document url("about:privatebrowsing") {  
@@ -83,6 +86,9 @@
 		width: 120px !important;
 		height: 120px !important;
 	}
+  .wordmark {
+    display: none !important;
+  }
 	#private-browsing-myths {
 		display: none !important;
 	}
