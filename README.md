@@ -8,3 +8,4 @@ A minimal Firefox/Librewolf userChrome configuration.
 - Go to "about:support", locate your Profile Directory and open it
 - Copy the "chrome" folder (located in the browser folders, depending on which browser you use) to your profile directory
 - Restart Firefox/Librewolf and enjoy! :)
+
