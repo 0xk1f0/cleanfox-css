@@ -1,4 +1,4 @@
-/* 
+/*
 	Big Thanks and Credits to leadweedy:
 	https://github.com/leadweedy/Firefox-Proton-Square
 	I took some of the squaring stuff from his Repo
@@ -10,10 +10,7 @@
 	--sc-color:#151515;
 }
 
-@-moz-document url("about:newtab"), url("about:home") {  
-	body {
-		background-color: var(--bg-color) !important;
-	}
+@-moz-document url("about:newtab"), url("about:home") {
 	.icon {
 		display: none !important;
 	}
@@ -34,9 +31,9 @@
 	.fake-textbox {
 		color: #ffffff !important;
 	}
-	.logo-and-wordmark .logo { 
+	.logo-and-wordmark .logo {
 		background: url("img/dark/logo.png") no-repeat !important; 
-		background-size: cover !important; 
+		background-size: cover !important;
 		display: inline-block !important;
 	} 
 	.logo {
@@ -49,11 +46,6 @@
 }
 
 @-moz-document url("about:privatebrowsing") {  
-	body {
-		background-color: var(--bg-color) !important;
-		justify-content: unset !important;
-		padding-top: 134px !important;
-	}
 	.icon {
 		display: none !important;
 	}
