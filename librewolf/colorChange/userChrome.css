@@ -133,7 +133,6 @@ menupopup menuitem:hover, menupopup menu:hover {
 
 .tabbrowser-tab:hover .tab-background {
 	border: solid var(--hl-color) !important;
-	
 }
 
 .tabbrowser-tab[selected] .tab-content {
@@ -145,12 +144,7 @@ menupopup menuitem:hover, menupopup menu:hover {
 }
 
 #tabbrowser-tabs {
-	background-color: var(--bg-color) !important;
 	margin: 0 !important;
-}
-
-toolbar {
-	background-color: var(--sc-color) !important;
 }
 
 #urlbar {
@@ -187,10 +181,6 @@ toolbar {
 #urlbar-input {
 	color: #ffffff !important;
 	margin-left: 6px !important;
-}
-
-#identity-box {
-	display: none !important;
 }
 
 #stop-reload-button image {
