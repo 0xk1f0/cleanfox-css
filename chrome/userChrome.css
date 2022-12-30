@@ -1,0 +1,259 @@
+/* 
+	Big Thanks and Credits to leadweedy:
+	https://github.com/leadweedy/Firefox-Proton-Square
+	I took some of the squaring stuff from his Repo
+*/
+
+:root {
+	--toolbarbutton-border-radius: 0 !important;
+	--arrowpanel-menuitem-border-radius: 0 !important;
+	--arrowpanel-border-radius: 0 !important;
+	--tab-border-radius: 0 !important;
+	--subviewbutton-border-radius: 0 !important;
+}
+
+window,
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+    -moz-appearance: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+menupopup {
+	border: none !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#shadow-root {
+	border: none !important;
+	border-radius: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+menupopup menuitem, menupopup menu {
+	padding-block: 2px !important;
+	margin: 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+toolbarbutton {
+	border-radius: 0 !important;
+}
+
+.toolbarbutton-badge-stack {
+	border-radius: 0 !important;
+}
+
+#BMB_bookmarksPopup {
+	border-radius: 0 !important;
+	opacity: 100% !important;
+}
+
+#BMB_bookmarksPopup menuitem, #BMB_bookmarksPopup menu {
+    padding-block: 2px !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+}
+
+#BMB_bookmarksPopup menuitem:hover, #BMB_bookmarksPopup menu:hover {
+	margin: 0 !important;
+}
+
+.menupopup-arrowscrollbox {
+	border: none !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#PersonalToolbar {
+    max-height: 3em !important;
+}
+
+#navigator-toolbox {
+	border-bottom: none !important;
+}
+
+.tabbrowser-tab, .tab-content, .tab-background{
+	margin: 0 !important;
+}
+
+#tabbrowser-tabs {
+	margin: 0 !important;
+}
+
+#urlbar {
+	border-radius: 0 !important;
+}
+
+#urlbar-input-container {
+	border-radius: 0 !important;
+}
+
+#urlbar-background {
+	border-radius: 0 !important;
+}
+
+#urlbar-background, #searchbar {
+    box-shadow: none !important;
+}
+
+#nav-bar {
+    box-shadow: none !important;
+    border-top: none !important;
+}
+
+#stop-reload-button image {
+	border-radius: 0 !important;
+}
+
+#forward-button image {
+	border-radius: 0 !important;
+}
+
+#back-button image {
+	border-radius: 0 !important;
+}
+
+.subviewbutton.panel-subview-footer {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.panel-header {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.panel-subview-footer {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#PlacesToolbarItems{ 
+	-moz-box-pack: center;
+	border-radius: 0 !important;
+}
+
+#tabbrowser-tabs {
+	--proton-tab-block-margin: 0;
+	--tab-border-radius: 0;
+}
+.tab-background {	
+	box-shadow: none !important;
+}
+
+.tabbrowser-tab[label="New Tab"] .tab-content .tab-icon-image {
+    display: none !important;
+}
+
+.tabbrowser-tab[label="Private Browsing"] .tab-content .tab-icon-image {
+    display: none !important;
+}
+
+#tabbrowser-tabs .tab-background > .tab-context-line {
+	margin: 0 !important;
+}
+
+#contentAreaContextMenu {
+	margin: 0 !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-badge-stack {
+	border-radius: 0 !important;
+}
+
+panel {
+	-moz-window-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+#appMenu-popup {
+	border-radius: 0 !important;
+}
+
+#appMenu-multiView {
+	border-radius: 0 !important;
+}
+
+.panel-viewcontainer {
+	border-radius: 0 !important;
+}
+
+.panel-subview-body {
+	border-radius: 0 !important;
+}
+
+.panel-arrowcontainer * {
+	border-radius: 0 !important;
+}
+
+#appMenu-popup {
+	border-radius: 0 !important;
+}
+
+#appMenu-popup .subviewbutton {
+	border-radius: 0 !important;
+}
+
+#appMenu-popup .subviewbutton:hover {
+	border-radius: 0 !important;
+}
+
+@supports not -moz-bool-pref("browser.syncavatar.round") {
+  #fxa-avatar-image {border-radius: 0 !important;}
+}
+#fxa-avatar-image {transform: scale(var(--sync-avatar-scale)) !important;}
+
+.menupopup-arrowscrollbox, .panel-arrowcontainer, .panel-arrowbox, .panel-arrowscrollbox, menupopup {
+  border-radius: 0 !important;
+}
+
+menupopup menuitem, menupopup menu {border-radius: 0 !important;}
+
+#editBMPanel_namePicker {border-radius: 0 !important;}
+#editBMPanel_folderMenuList {border-radius: 0 !important;}
+#editBMPanel_tagsField {border-radius: 0 !important;}
+#editBMPanel_locationField {border-radius: 0 !important;}
+#editBMPanel_keywordField {border-radius: 0 !important;}
+
+.download-state, .downloadButton {border-radius: 0 !important;}
+.downloadProgress {
+  border-radius: 0 !important;
+  overflow: hidden !important;
+}
+.downloadProgress[paused] {
+  border-radius: 0 !important;
+}
+.downloadProgress:not([value="0"])::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.downloadProgress::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.downloadProgress[paused]::-moz-progress-bar {
+  border-radius: 0 !important;
+}
+.protections-popup-tp-switch, .protections-popup-tp-switch::before {border-radius: 0 !important;}
+
+#permission-popup-menulist {border-radius: 0 !important;}
+#webRTC-selectMicrophone-menulist {border-radius: 0 !important;}
+#webRTC-selectWindow-menulist {border-radius: 0 !important;}
+#webRTC-previewVideo {border-radius: 0 !important;}
+#appMenu-zoomReset-button2 > .toolbarbutton-text,
+#appMenu-fullscreen-button2 > .toolbarbutton-icon {
+  border-radius: 0 !important;
+}

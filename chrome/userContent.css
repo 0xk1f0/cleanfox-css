@@ -1,59 +1,67 @@
 /* 
-	Big Thanks and Credits to leadweedy:
-	https://github.com/leadweedy/Firefox-Proton-Square
-	I took some of the squaring stuff from his Repo
+	  Big Thanks and Credits to leadweedy:
+	  https://github.com/leadweedy/Firefox-Proton-Square
+    I took some of the squaring stuff from his Repo
 */
 
-:root {
-    --bg-color:#030303;
-	--hl-color:#404040;
-	--sc-color:#151515;
-}
-
-@-moz-document url("about:newtab"), url("about:home") {  
-	body {
-		background-color: var(--bg-color) !important;
-	}
+@-moz-document url("about:newtab"), url("about:home") {
 	.icon {
 		display: none !important;
 	}
 	.search-inner-wrapper {
 		display: none !important;
 	}
-	.search-handoff-button {
-		background-color: var(--sc-color) !important;
-		border-radius: 0px !important;
-		border: solid 3px var(--sc-color) !important;
-		transition: 100ms;
-		box-shadow: none !important;
-	}
-	.search-handoff-button:hover {
-		border: solid var(--hl-color) !important;
-		transition: 100ms;
-	}
-	.fake-textbox {
-		color: #ffffff !important;
-	}
-	.logo-and-wordmark .logo { 
-		background: url("img/dark/logo.png") no-repeat !important; 
+  .ds-outer-wrapper-breakpoint-override {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .only-search {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .visible-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .outer-wrapper {
+    display: flex !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .outer-wrapper main {
+    width: unset !important;
+    min-width: var(--in-content-container-min-width) !important;
+    max-width: var(--in-content-container-max-width) !important;
+  }
+  .non-collapsible-section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .logo-and-wordmark {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+	.logo {
+    background: url("img/logo.svg") no-repeat !important;
 		background-size: cover !important; 
 		display: inline-block !important;
-	} 
-	.logo {
-		width: 120px !important;
-		height: 120px !important;
+		width: 140px !important;
+		height: 140px !important;
+    filter: invert(50%) saturate(150%) !important;
 	}
   .wordmark {
     display: none !important;
   }
 }
 
-@-moz-document url("about:privatebrowsing") {  
-	body {
-		background-color: var(--bg-color) !important;
-		justify-content: unset !important;
-		padding-top: 134px !important;
-	}
+@-moz-document url("about:privatebrowsing") {
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 	.icon {
 		display: none !important;
 	}
@@ -63,37 +71,19 @@
   .info {
     display: none !important;
   }
-	.search-handoff-button {
-		background-color: var(--sc-color) !important;
-		border-radius: 0px !important;
-		border: solid 3px var(--sc-color) !important;
-		transition: 100ms;
-		box-shadow: none !important;
-	}
-	.search-handoff-button:hover {
-		border: solid var(--hl-color) !important;
-		transition: 100ms;
-	}
-	.fake-textbox {
-		color: #e2e1ed !important;
-	}
-	.logo-and-wordmark .logo { 
-		background: url("img/dark/logopv.png") no-repeat !important;
+	.logo {
+    background: url("img/logopv.svg") no-repeat !important;
 		background-size: cover !important; 
 		display: inline-block !important;
-	}
-	.logo {
-		width: 120px !important;
-		height: 120px !important;
+		width: 140px !important;
+		height: 140px !important;
+    filter: invert(50%) saturate(150%) !important;
 	}
   .wordmark {
     display: none !important;
   }
 	#private-browsing-myths {
 		display: none !important;
-	}
-	#info-title {
-		margin: 0 !important;
 	}
 }
 
@@ -118,17 +108,6 @@ url(about:preferences#search), url(about:preferences#privacy), url(about:prefere
   .sync-configured {border-radius: 0 !important;}
   .fxaProfileImage {border-radius: 0 !important;}
   #policies-container {border-radius: 0 !important;}
-}
-
-
-@-moz-document url(about:preferences), url(about:preferences#general), url(about:preferences#home),
-url(about:preferences#search), url(about:preferences#privacy), url(about:preferences#sync){
-  input[type="checkbox"].toggle-button::before{
-    height: 10px !important;
-    width: 10px !important;
-    margin-top: 4px !important;
-    margin-left: 2px !important;
-  }
 }
 
 @-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
@@ -170,17 +149,14 @@ url(about:preferences#search), url(about:preferences#privacy), url(about:prefere
     #pw2 {border-radius: 0 !important;}
     #pwmeter {
       appearance: none !important;
-      height: 0.35em !important;
       border: none !important;
       vertical-align: 0 !important;
-      margin: 0.5em 0 !important;
     }
     #foregroundtextmenu {border-radius: 0 !important;}
     #backgroundmenu {border-radius: 0 !important;}
     #unvisitedlinkmenu {border-radius: 0 !important;}
     #visitedlinkmenu {border-radius: 0 !important;}
     #sanitizeEverythingWarningBox {border-radius: 0 !important;}
-
 }
 
 @-moz-document url(about:addons) {
@@ -213,7 +189,7 @@ url(about:preferences#search), url(about:preferences#privacy), url(about:prefere
 
 @-moz-document url(about:buildconfig), url(about:compat), url(about:crashes), url(about:debugging), 
 url(about:debugging#/setup), url(about:debugging#/runtime/this-firefox), url(about:devtools), 
- url(about:logins), url(about:networking), url(about:policies), url(about:profiles),
+url(about:logins), url(about:networking), url(about:policies), url(about:profiles),
 url(about:profiling), url(about:protections), url(about:serviceworkers), url(about:studies), 
 url(about:support), url(about:telemetry), url(about:unloads), url(about:url-classifier), 
 url(about:webrtc), url(about:welcome) {
