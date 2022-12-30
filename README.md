@@ -1,9 +1,7 @@
-# cleanfox-css
-
-A minimal Firefox userChrome configuration.
-
-<div style="text-align:center">
-  ![preview](image.png){:width="450px"}
+<div align="center">
+<h1>cleanfox-css</h1>
+<p>A minimal Firefox userChrome configuration.</p>
+  <img src="image.png">
 </div>
 
 ## Installation
