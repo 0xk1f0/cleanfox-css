@@ -143,9 +143,10 @@ toolbarbutton {
 	padding: 0 !important;
 }
 
-#PlacesToolbarItems{ 
-	-moz-box-pack: center;
+#personal-bookmarks { 
+	margin: 0 auto !important;
 	border-radius: 0 !important;
+    flex: unset !important;
 }
 
 #tabbrowser-tabs {
